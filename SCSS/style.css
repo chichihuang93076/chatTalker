@@ -158,8 +158,8 @@ img {
 
 .header .ball01 {
   position: absolute;
-  top: 590px;
-  right: 1228px;
+  top: 589px;
+  left: -222px;
   z-index: -1;
 }
 
@@ -361,6 +361,10 @@ img {
   padding-bottom: 16px;
 }
 
+.users h2 {
+  margin-bottom: 104px;
+}
+
 .user-feedback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +374,14 @@ img {
           justify-content: space-between;
 }
 
-.user-feedback .user-img {
+.user-feedback .user-box {
+  position: relative;
+}
+
+.user-feedback .user-box .user-img {
+  position: absolute;
+  top: -20%;
+  left: 5%;
   width: 80px;
   height: 80px;
   border-radius: 50%;
