@@ -278,8 +278,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .service1 {
@@ -336,7 +337,7 @@ img {
 }
 
 .service2 {
-  width: 395px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
