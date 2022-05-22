@@ -21,7 +21,7 @@ h4{
 }
 
 h5{
-  font-size: 20px;
+  font-size: 18ßpx;
 }
 
 h6{
@@ -34,10 +34,20 @@ p{
 }
 
 .paybtn{
-  width: 138px;
   display: inline-block;    
   background-color: #56C4C5;;
   color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;  
+  padding: 12px 32px;
+} 
+
+.selectbtn{
+  display: inline-block;    
+  background-color: #FFFFFF;
+  color: #56C4C5;
   font-size: 18px;
   text-decoration: none;
   border: 1px solid #56C4C5;
@@ -124,6 +134,8 @@ p{
 .services{
   display: flex;
   justify-content: space-around;  
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .service-group1{
@@ -131,14 +143,13 @@ p{
   display: flex;
   justify-content: space-between;  
   flex-wrap: wrap;
-  li{      
+  .service-item{      
     text-align: left; 
-    width: 50%;
-    height: 280px;
+    width: 45%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
-    padding: 30px 30px 30px 32px;
+    padding: 30px;
     margin-bottom: 24px;
     .icon-img{
       width: 86px;
@@ -151,7 +162,8 @@ p{
       align-items: center;
       margin-bottom: 24px;
     }
-    h4{
+    h5{
+      font-weight: bold;
       text-align: left;
       margin-bottom: 16px;
     }
@@ -163,20 +175,133 @@ p{
 }
 
 .service-group2{
-  width: 50%;
+  width: 37%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:flex-start ;
   h2{    
     text-align: left;      
     line-height: 150%;
   }
-  h4{
+  h5{
     text-align: left;
     line-height: 150%;
     padding-bottom: 16px;
   }
 }
+
+.users{
+  h2{
+    text-align: center;
+    margin-bottom: 104px;
+  }
+}
+
+.user-feedback{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .user-box{
+    width: 33.33%;
+    position: relative;
+    margin-bottom: 16px;
+    .user-img{
+      position: absolute;    
+      top: -20%;
+      left: 5%;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+  }
+  
+
+}
+
+.user-content{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 48px 32px 24px 32px;
+  .user-msg{
+    line-height: 150%;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+  .company{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 16px 0;
+  }
+  .user-nav{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.dots{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  .dot-item{
+    width: 10px;
+    height: 10px;
+    background-color: #DDDDDD;    
+    border-radius: 50px;
+    margin-right: 8px;    
+  }
+  .dot-yellow{
+    width: 16px;
+    height: 10px;    
+    border-radius: 50px;
+    background-color: #FFD153;
+  }
+}
+
+.footer-content{   
+  background-image: url("../images/home_footer.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  h2{
+    font-weight: bold;
+    color: #221E1F;
+    margin: 260px 0px 48px 0px;
+  }
+ 
+}
+
+.footer{
+  background-color: #F5F5F5;
+  padding: 16px 0px 16px 0px;
+  text-align: center;
+} 
+
+.choices{
+  h2{
+    text-align: center;
+    padding-bottom: 48px;
+  }
+  .select-choices{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+    .no-selectd{
+      background-color: #FFFFFF;
+      color: #56C4C5;
+      margin-left: 16px;
+    }
+  }
+}
+
+
 
 @media (max-width:768px) {
   .social .social-item{  
@@ -185,10 +310,22 @@ p{
   .role .role-item{
     width: 50%;
   }
+  .service-group1{
+    width: 100%;
+  }
+  .service-group2{
+    width: 100%;
+  }
+  .user-feedback .user-box{
+    width: 100%;
+  }
 }
 
 @media (max-width:414px) {
   .role .role-item{
+    width: 100%;
+  }
+  .service-group1 .service-item{
     width: 100%;
   }
 }
