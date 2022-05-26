@@ -14,6 +14,10 @@
   padding-right: 16px;
 }
 
+sub { 
+  vertical-align: sub;
+  font-size: smaller;
+}
 
 h2{
   font-size: 32px;
@@ -264,7 +268,7 @@ nav{
   .user-box{
     width: 32%;
     position: relative;
-    margin-bottom: 16px;
+    
     .user-img{
       position: absolute;    
       top: -20%;
@@ -286,10 +290,10 @@ nav{
   box-shadow: 0px 2px 10px #00000014;
   border-radius: 12px;
   padding: 48px 32px 24px 32px;
+  
   .user-msg{
     line-height: 150%;
     text-align: left;
-    padding-bottom: 16px;
   }
   .company{
     font-size: 16px;
@@ -304,9 +308,9 @@ nav{
 }
 
 .dots{
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
+  margin: 10px 0px 100px 0px;
   .dot-item{
     width: 10px;
     height: 10px;
@@ -323,22 +327,21 @@ nav{
 }
 
 .footer-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 100px;
   h2{
     font-weight: bold;
     color: #221E1F;
-    margin: 260px 0px 48px 0px;
+    padding-top: 260px;
+    padding-bottom: 44px;
   }
-  & .footer_img {
-    
-    background: url(../images/home_footer.svg) no-repeat
-        center center;
-    background-size: cover;
-  }
+  
+}
+
+.footer_img {    
+  background: url(../images/home_footer.svg) no-repeat
+      center center;
+  
 }
 
 .footer{
@@ -346,6 +349,34 @@ nav{
   padding: 16px 0px 16px 0px;
   text-align: center;
 } 
+
+// -------- 方案費用 -----------
+.wrap-fee {
+  height: 90vh;
+  background-image: url("../images/banner.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  
+}  
+
+.main2{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-top: 92px;
+    h1{
+      color: #221E1F;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 150%;
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: 20px;
+      color: #221E1F;
+    }
+   
+}
 
 .choices{
   h2{
@@ -368,6 +399,7 @@ nav{
   display: flex;  
   padding: 16px 24px;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .case-group{
@@ -376,7 +408,7 @@ nav{
   box-shadow: 0px 2px 10px #00000014;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  
+  
   h4{
     font-weight: bold;
     text-align: center;    
@@ -388,16 +420,20 @@ nav{
   }
   .case-desc{
     padding: 32px 19px 32px 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .case-title{
       text-align: center;      
       line-height: 150%;
     }
+   
   }
 }
 
 .case-btns{
   display: flex;  
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;  
   margin: 32px 0px;
   .case-btn{
@@ -433,10 +469,57 @@ nav{
   }
 }
 
+.questions{
+  margin-bottom: 100px;
+  h2{
+    text-align: center;
+    margin-bottom: 48px;
+  }
+}
+
+.question-item{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  opacity: 1;
+  text-decoration: none;
+  .question{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;  
+    .icon-noselect{
+      display: none;
+    }
+    .icon-open{
+      color: #56C4C5;
+    }
+  }
+  p{
+    padding: 16px 32px;
+  }
+
+}
+
 @media (max-width:768px) {
   .main .content-right{
     width:100%;
   }
+  
+  nav .logo{
+    width:50%;
+  }
+
+  .logo-btn{
+    display: inline-block;    
+    background-color:#FF5D50;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #FF5D50;
+    border-radius: 22px;  
+    padding: 8px 32px;
+  } 
+
   .social .social-item{  
     width: 100%;
   }
@@ -452,17 +535,23 @@ nav{
   .user-feedback .user-box{
     width: 100%;
   }
+  //--- 方案費用 ----
+  .main2{
+    width: 100%;
+  }
 }
 
 @media (max-width:414px) {
   .wrap{
     background-image: url("../images/bg_home_sm.svg");
     background-position: center bottom;
+   
   }
  
   nav .logo{
-    width:50%;
+    width:70%;
   }
+
   .role .role-item{
     width: 100%;
   }
@@ -470,15 +559,13 @@ nav{
     width: 100%;
   }
   
-  .footer-content .footer_img{
-    background-image:none;
-  }
-  .footer-content .footer_smimg{
+  .footer_img{
     background-image: url(../images/footer_sm.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    //height: 70vh;
+    height: 30vh;
   }
+  
   .footer-content{
     display: flex;
     flex-direction: column;
@@ -493,6 +580,13 @@ nav{
     }
   
 
+    
+  }
+
+  //--- 方案費用 ----
+  .wrap-fee{
+    background-image: url("../images/banner_sm.svg");
+    background-position: center top;
     
   }
 
