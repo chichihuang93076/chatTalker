@@ -67,8 +67,17 @@ img {
 
 /*	outline: 1px solid #000;*/
 .wrap {
+  margin: 0 auto;
   height: 100vh;
   background-image: url("../images/bg_home.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.wrap-fee {
+  margin: 0 auto;
+  height: 90vh;
+  background-image: url("../images/banner.svg");
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -499,13 +508,6 @@ nav .logo {
   text-align: center;
 }
 
-.wrap-fee {
-  height: 90vh;
-  background-image: url("../images/banner.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-}
-
 .main2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,12 +548,18 @@ nav .logo {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .choices .select-choices .no-selectd {
   background-color: #FFFFFF;
   color: #56C4C5;
   margin-left: 16px;
+}
+
+.choices .select-choices li {
+  padding-bottom: 10px;
 }
 
 .cases {
@@ -562,6 +570,8 @@ nav .logo {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .case-group {
@@ -619,6 +629,10 @@ nav .logo {
       -ms-flex-align: center;
           align-items: center;
   margin: 32px 0px;
+}
+
+.case-btns .case-equal {
+  padding: 0px 10px;
 }
 
 .case-btns .case-btn {
@@ -712,7 +726,7 @@ nav .logo {
     width: 100%;
   }
   nav .logo {
-    width: 50%;
+    width: 40%;
   }
   .logo-btn {
     display: inline-block;
@@ -738,8 +752,12 @@ nav .logo {
   }
   .user-feedback .user-box {
     width: 100%;
+    margin-bottom: 80px;
   }
   .main2 {
+    width: 100%;
+  }
+  .case-group {
     width: 100%;
   }
 }
@@ -747,7 +765,8 @@ nav .logo {
 @media (max-width: 414px) {
   .wrap {
     background-image: url("../images/bg_home_sm.svg");
-    background-position: center bottom;
+    background-position: right bottom;
+    background-repeat: no-repeat;
   }
   nav .logo {
     width: 70%;

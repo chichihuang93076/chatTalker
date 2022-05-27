@@ -1,10 +1,20 @@
 @import "reset";
 
 .wrap {
+  margin: 0 auto;
   height: 100vh;
   background-image: url("../images/bg_home.svg");
   background-repeat: no-repeat;
   background-position: right top ;
+}  
+
+.wrap-fee {
+  margin: 0 auto;
+  height: 90vh;
+  background-image: url("../images/banner.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  
 }  
 
 .container {
@@ -351,13 +361,7 @@ nav{
 } 
 
 // -------- 方案費用 -----------
-.wrap-fee {
-  height: 90vh;
-  background-image: url("../images/banner.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  
-}  
+
 
 .main2{
   display: flex;
@@ -387,10 +391,14 @@ nav{
     display: flex;
     justify-content: center;
     padding-bottom: 48px;
+    flex-wrap: wrap;
     .no-selectd{
       background-color: #FFFFFF;
       color: #56C4C5;
       margin-left: 16px;
+    }
+    li{
+      padding-bottom: 10px;
     }
   }
 }
@@ -400,6 +408,7 @@ nav{
   padding: 16px 24px;
   justify-content: space-around;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .case-group{
@@ -436,6 +445,9 @@ nav{
   justify-content: space-between;
   align-items: center;  
   margin: 32px 0px;
+  .case-equal{
+    padding: 0px 10px;
+  }
   .case-btn{
     display: flex;
     flex-direction: column;
@@ -506,7 +518,7 @@ nav{
   }
   
   nav .logo{
-    width:50%;
+    width:40%;
   }
 
   .logo-btn{
@@ -534,17 +546,23 @@ nav{
   }
   .user-feedback .user-box{
     width: 100%;
+    margin-bottom: 80px;
   }
+  
   //--- 方案費用 ----
   .main2{
     width: 100%;
+  }
+  .case-group{
+    width:100%
   }
 }
 
 @media (max-width:414px) {
   .wrap{
     background-image: url("../images/bg_home_sm.svg");
-    background-position: center bottom;
+    background-position: right bottom;
+    background-repeat: no-repeat;
    
   }
  
