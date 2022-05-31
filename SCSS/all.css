@@ -83,7 +83,7 @@ img {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1088px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -137,7 +137,6 @@ nav .logo {
 }
 
 .main {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,18 +149,18 @@ nav .logo {
       flex-wrap: wrap;
 }
 
-.main .content-left h5 {
+.main .content-left h1 {
   color: #56C4C5;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.main .content-left h1 {
+.main .content-left .main-title {
   color: #221E1F;
   font-size: 48px;
   font-weight: bold;
   line-height: 150%;
-  margin-bottom: 16px;
 }
 
 .main .content-left p {
@@ -177,11 +176,12 @@ nav .logo {
   display: inline-block;
   background-color: #FF5D50;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   border: 1px solid #FF5D50;
-  border-radius: 27px;
-  padding: 8px 32px;
+  border-radius: 22px;
+  padding: 7px 31px;
+  line-height: normal;
 }
 
 .paybtn {
@@ -237,7 +237,7 @@ nav .logo {
   height: 90px;
 }
 
-.social .social-item h4 {
+.social .social-item h3 {
   font-weight: bold;
   margin-bottom: 24px;
 }
@@ -253,6 +253,7 @@ nav .logo {
 }
 
 .roles h2 {
+  margin-top: 36px;
   margin-bottom: 16px;
 }
 
@@ -305,8 +306,12 @@ nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 100px;
@@ -367,19 +372,6 @@ nav .logo {
 
 .service-group2 {
   width: 37%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .service-group2 h2 {
@@ -499,7 +491,9 @@ nav .logo {
 }
 
 .footer_img {
-  background: url(../images/home_footer.svg) no-repeat center center;
+  margin: 0 auto;
+  height: 65vh;
+  background: url(../images/home_footer.svg) no-repeat top center;
 }
 
 .footer {
@@ -736,10 +730,12 @@ nav .logo {
     text-decoration: none;
     border: 1px solid #FF5D50;
     border-radius: 22px;
-    padding: 8px 32px;
+    padding: 7px 31px;
+    line-height: normal;
   }
   .social .social-item {
     width: 100%;
+    margin-bottom: 24px;
   }
   .role .role-item {
     width: 50%;
@@ -764,12 +760,28 @@ nav .logo {
 
 @media (max-width: 414px) {
   .wrap {
+    height: 90vh;
     background-image: url("../images/bg_home_sm.svg");
-    background-position: right bottom;
+    background-position-x: center;
+    background-position-y: 48vh;
     background-repeat: no-repeat;
   }
   nav .logo {
-    width: 70%;
+    width: 50%;
+  }
+  .main-line {
+    background-color: #FFD153;
+    height: 2px;
+    margin-bottom: 32px;
+  }
+  .main .content-left h1 {
+    font-size: 16px;
+  }
+  .main .content-left .main-title {
+    color: #221E1F;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
   }
   .role .role-item {
     width: 100%;
@@ -778,10 +790,11 @@ nav .logo {
     width: 100%;
   }
   .footer_img {
+    margin: 0 auto;
+    height: 60vh;
     background-image: url(../images/footer_sm.svg);
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 30vh;
+    background-position: top center;
   }
   .footer-content {
     display: -webkit-box;
