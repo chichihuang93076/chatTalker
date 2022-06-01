@@ -76,7 +76,7 @@ img {
 
 .wrap-fee {
   margin: 0 auto;
-  height: 90vh;
+  height: 70vh;
   background-image: url("../images/banner.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -513,7 +513,6 @@ nav .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 92px;
 }
 
 .main2 h1 {
@@ -560,10 +559,10 @@ nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px 24px;
+  padding: 16px 0px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 44px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -580,6 +579,7 @@ nav .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .case-group h4 {
@@ -594,7 +594,7 @@ nav .logo {
 }
 
 .case-group .case-desc {
-  padding: 32px 19px 32px 29px;
+  padding: 32px 24px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,7 +820,13 @@ nav .logo {
   }
   .wrap-fee {
     background-image: url("../images/banner_sm.svg");
-    background-position: center top;
+    background-position: left 10vh;
+  }
+  .case-group .case-desc {
+    padding: 16px 0px;
+  }
+  .case-btns .case-btn .case-h2 {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=all.css.map */
