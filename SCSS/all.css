@@ -740,6 +740,12 @@ nav .logo {
   .role .role-item {
     width: 50%;
   }
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .service-group1 {
     width: 100%;
   }
@@ -821,6 +827,11 @@ nav .logo {
   .wrap-fee {
     background-image: url("../images/banner_sm.svg");
     background-position: left 10vh;
+  }
+  .choices .select-choices {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
   }
   .case-group .case-desc {
     padding: 16px 0px;

@@ -533,6 +533,11 @@ nav{
   .role .role-item{
     width: 50%;
   }
+
+  .services{
+    flex-direction: column-reverse;
+  }
+
   .service-group1{
     width: 100%;
   }
@@ -624,6 +629,14 @@ nav{
     background-image: url("../images/banner_sm.svg");
     background-position: left 10vh;
   }
+
+  .choices{
+    .select-choices{
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  }
+  
 
   .case-group{
     .case-desc{
