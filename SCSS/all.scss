@@ -421,17 +421,16 @@ nav{
   }
   .select-choices{
     display: flex;
-    justify-content: center;
-    padding-bottom: 48px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 89px 16px 89px;
     flex-wrap: wrap;
     .no-selectd{
       background-color: #FFFFFF;
       color: #56C4C5;
-      margin-left: 16px;
+      //margin-left: 16px;
     }
-    li{
-      padding-bottom: 10px;
-    }
+    
   }
 }
 
@@ -711,8 +710,18 @@ nav{
 
   .choices{
     .select-choices{
+      padding: 0px 0px 16px 0px;
       flex-wrap: nowrap;
       overflow-x: auto;
+      .paybtn{
+        width: 110px;
+        font-size: 16px;
+        text-decoration: none;
+        border: 1px solid #56C4C5;
+        border-radius: 24px;  
+        padding: 7px 15px;
+        margin-left: 6px;
+      }
     }
   }
   

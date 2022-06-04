@@ -574,10 +574,12 @@ nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 48px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 89px 16px 89px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -585,11 +587,6 @@ nav .logo {
 .choices .select-choices .no-selectd {
   background-color: #FFFFFF;
   color: #56C4C5;
-  margin-left: 16px;
-}
-
-.choices .select-choices li {
-  padding-bottom: 10px;
 }
 
 .plans {
@@ -900,9 +897,19 @@ nav .logo {
     background-position: left 10vh;
   }
   .choices .select-choices {
+    padding: 0px 0px 16px 0px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-x: auto;
+  }
+  .choices .select-choices .paybtn {
+    width: 110px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #56C4C5;
+    border-radius: 24px;
+    padding: 7px 15px;
+    margin-left: 6px;
   }
   .case-group .case-desc {
     padding: 16px 0px;
