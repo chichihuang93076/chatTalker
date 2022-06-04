@@ -897,6 +897,9 @@ nav .logo {
     background-position: left 10vh;
   }
   .choices .select-choices {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding: 0px 0px 16px 0px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -905,6 +908,7 @@ nav .logo {
   .choices .select-choices .paybtn {
     width: 110px;
     font-size: 16px;
+    text-align: center;
     text-decoration: none;
     border: 1px solid #56C4C5;
     border-radius: 24px;
