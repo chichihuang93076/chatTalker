@@ -601,7 +601,9 @@ nav .logo {
   top: calc(100vh - 700px);
   width: 94px;
   height: 361px;
-  background-image: url("../images/ball01.svg");
+  background-image: url("../images/ball03.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: right;
   z-index: -1;
 }
